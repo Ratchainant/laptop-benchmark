@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-04-24T15:02:07.434457",
+  "timestamp": "2026-04-24T15:07:31.033802",
   "platform": {
     "os": "Darwin",
     "machine": "arm64",
@@ -7,8 +7,8 @@
     "python": "3.13.7",
     "hostname": "Ratchainants-MacBook-Air.local",
     "is_apple_silicon": true,
-    "onnx_available": false,
-    "onnx_backend": null
+    "onnx_available": true,
+    "onnx_backend": "CoreML"
   },
   "ram_gb": 17.2,
   "results": [
@@ -18,25 +18,36 @@
       "unit": "tokens/sec",
       "higher_is_better": true,
       "samples": [
-        38.86,
-        39.04,
-        39.13,
-        39.27,
-        39.88
+        38.78,
+        39.21,
+        37.88,
+        39.01,
+        39.02
       ],
-      "median": 39.13,
-      "mean": 39.24,
-      "stdev": 0.39,
+      "median": 39.01,
+      "mean": 38.78,
+      "stdev": 0.53,
       "backend": "Metal (Apple Silicon)",
       "model": "llama3.2:latest",
       "weight": 0.3
     },
     {
       "name": "Image Classification (ResNet-50, ONNX)",
-      "status": "skip",
-      "reason": "onnxruntime \u0e44\u0e21\u0e48\u0e44\u0e14\u0e49\u0e15\u0e34\u0e14\u0e15\u0e31\u0e49\u0e07",
-      "install_mac": "pip install onnxruntime",
-      "install_amd": "pip install onnxruntime-directml  (Windows NPU/GPU)"
+      "status": "ok",
+      "unit": "images/sec",
+      "higher_is_better": true,
+      "samples": [
+        692.51,
+        688.95,
+        690.94,
+        694.3,
+        696.31
+      ],
+      "median": 692.51,
+      "mean": 692.6,
+      "stdev": 2.86,
+      "backend": "CoreML",
+      "weight": 0.2
     },
     {
       "name": "Pandas groupby + join (5M rows)",
@@ -44,15 +55,15 @@
       "unit": "seconds",
       "higher_is_better": false,
       "samples": [
-        0.261,
-        0.266,
-        0.249,
-        0.256,
-        0.249
+        0.267,
+        0.27,
+        0.267,
+        0.255,
+        0.259
       ],
-      "median": 0.256,
-      "mean": 0.256,
-      "stdev": 0.007,
+      "median": 0.267,
+      "mean": 0.264,
+      "stdev": 0.006,
       "weight": 0.15
     },
     {
@@ -61,15 +72,15 @@
       "unit": "seconds",
       "higher_is_better": false,
       "samples": [
-        0.258,
-        0.242,
-        0.237,
-        0.232,
-        0.235
+        0.238,
+        0.163,
+        0.16,
+        0.16,
+        0.178
       ],
-      "median": 0.237,
-      "mean": 0.241,
-      "stdev": 0.01,
+      "median": 0.163,
+      "mean": 0.18,
+      "stdev": 0.033,
       "weight": 0.15
     },
     {
@@ -78,15 +89,15 @@
       "unit": "GB/s",
       "higher_is_better": true,
       "samples": [
-        3.822,
-        3.661,
-        4.238,
-        4.291,
-        4.549
+        4.657,
+        4.463,
+        4.721,
+        4.301,
+        4.786
       ],
-      "median": 4.238,
-      "mean": 4.112,
-      "stdev": 0.362,
+      "median": 4.657,
+      "mean": 4.586,
+      "stdev": 0.2,
       "file_size_gb": 0.25,
       "weight": 0.1
     },
@@ -96,15 +107,15 @@
       "unit": "GFLOPS",
       "higher_is_better": true,
       "samples": [
-        1420.29,
-        1408.13,
-        1413.82,
-        1408.59,
-        1396.4
+        1355.22,
+        1337.44,
+        1347.05,
+        1337.87,
+        1337.33
       ],
-      "median": 1408.59,
-      "mean": 1409.44,
-      "stdev": 8.79,
+      "median": 1337.87,
+      "mean": 1342.98,
+      "stdev": 7.99,
       "matrix_size": "4096\u00d74096",
       "weight": 0.1
     }
