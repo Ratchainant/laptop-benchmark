@@ -78,7 +78,7 @@ _↑ higher is better_
 | Mac Mini M4 | 2.86 GB/s | 61.5/100 | `██████████░░░░░░` |
 | Dell Pro (Ryzen AI) | 1.65 GB/s | 35.3/100 | `██████░░░░░░░░░░` |
 
-### NumPy matrix multiply — 10% weight
+### CPU Compute (NumPy matmul) — 10% weight
 
 _↑ higher is better_
 
@@ -100,7 +100,7 @@ _↑ higher is better_
 | Data / Analytics | MacBook Air M3 | 98.9/100 | `████████████████` |
 |  | Mac Mini M4 | 90.1/100 | `██████████████░░` |
 |  | Dell Pro (Ryzen AI) | 60.8/100 | `██████████░░░░░░` |
-| I/O + Memory | MacBook Air M3 | 86.9/100 | `██████████████░░` |
+| I/O + Compute | MacBook Air M3 | 86.9/100 | `██████████████░░` |
 |  | Mac Mini M4 | 80.7/100 | `█████████████░░░` |
 |  | Dell Pro (Ryzen AI) | 34.3/100 | `█████░░░░░░░░░░░` |
 
