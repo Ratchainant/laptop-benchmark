@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-04-24T14:48:18.186571",
+  "platform": {
+    "os": "Darwin",
+    "machine": "arm64",
+    "cpu": "Apple M4",
+    "python": "3.13.7",
+    "hostname": "Ratchainants-Mac-mini.local",
+    "is_apple_silicon": true,
+    "onnx_available": true,
+    "onnx_backend": "CoreML"
+  },
+  "ram_gb": 17.2,
+  "results": [
+    {
+      "name": "LLM Inference (Ollama \u00b7 llama3.2:latest)",
+      "status": "ok",
+      "unit": "tokens/sec",
+      "higher_is_better": true,
+      "samples": [
+        43.23,
+        43.44,
+        43.94,
+        43.27,
+        43.3
+      ],
+      "median": 43.3,
+      "mean": 43.44,
+      "stdev": 0.29,
+      "backend": "Metal (Apple Silicon)",
+      "model": "llama3.2:latest",
+      "weight": 0.3
+    },
+    {
+      "name": "Image Classification (ResNet-50, ONNX)",
+      "status": "ok",
+      "unit": "images/sec",
+      "higher_is_better": true,
+      "samples": [
+        732.32,
+        728.81,
+        729.98,
+        723.74,
+        730.99
+      ],
+      "median": 729.98,
+      "mean": 729.17,
+      "stdev": 3.3,
+      "backend": "CoreML",
+      "weight": 0.2
+    },
+    {
+      "name": "Pandas groupby + join (5M rows)",
+      "status": "ok",
+      "unit": "seconds",
+      "higher_is_better": false,
+      "samples": [
+        0.261,
+        0.274,
+        0.248,
+        0.28,
+        0.261
+      ],
+      "median": 0.261,
+      "mean": 0.265,
+      "stdev": 0.013,
+      "weight": 0.15
+    },
+    {
+      "name": "DuckDB analytical query (50M rows)",
+      "status": "ok",
+      "unit": "seconds",
+      "higher_is_better": false,
+      "samples": [
+        0.202,
+        0.209,
+        0.205,
+        0.203,
+        0.202
+      ],
+      "median": 0.203,
+      "mean": 0.204,
+      "stdev": 0.003,
+      "weight": 0.15
+    },
+    {
+      "name": "Sequential I/O Read (Parquet, ~1GB)",
+      "status": "ok",
+      "unit": "GB/s",
+      "higher_is_better": true,
+      "samples": [
+        2.189,
+        3.36,
+        2.795,
+        2.862,
+        4.764
+      ],
+      "median": 2.862,
+      "mean": 3.194,
+      "stdev": 0.971,
+      "file_size_gb": 0.25,
+      "weight": 0.1
+    },
+    {
+      "name": "NumPy matrix multiply (GFLOPS)",
+      "status": "ok",
+      "unit": "GFLOPS",
+      "higher_is_better": true,
+      "samples": [
+        1823.98,
+        1807.15,
+        1813.53,
+        1812.87,
+        1760.46
+      ],
+      "median": 1812.87,
+      "mean": 1803.6,
+      "stdev": 24.87,
+      "matrix_size": "4096\u00d74096",
+      "weight": 0.1
+    }
+  ]
+}
